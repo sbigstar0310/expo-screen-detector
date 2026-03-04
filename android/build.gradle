@@ -1,0 +1,12 @@
+plugins {
+  id 'com.android.library'
+  id 'expo-module-gradle-plugin'
+}
+
+android {
+  namespace "expo.modules.screendetector"
+  defaultConfig {
+    versionCode 1
+    versionName "0.1.0"
+  }
+}

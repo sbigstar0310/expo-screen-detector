@@ -1,0 +1,9 @@
+{
+  "platforms": ["ios", "android"],
+  "ios": {
+    "modules": ["ExpoScreenDetectorModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.screendetector.ExpoScreenDetectorModule"]
+  }
+}
