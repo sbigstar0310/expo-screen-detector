@@ -1,6 +1,6 @@
 {
   "name": "expo-screen-detector",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Expo module for detecting screen-off, screen-lock, and screen-unavailable state",
   "main": "src/index.ts",
   "types": "src/index.ts",
