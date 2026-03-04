@@ -13,7 +13,8 @@ class ExpoScreenDetectorModule : Module() {
     AsyncFunction("isScreenOff") {
       val context = appContext.reactContext ?: return@AsyncFunction false
       val powerManager = context.getSystemService(Context.POWER_SERVICE) as PowerManager
-      !powerManager.isInteractive
+      val isInteractive = powerManager.isInteractive
+      !isInteractive
     }
 
     AsyncFunction("isScreenLocked") {
@@ -26,7 +27,9 @@ class ExpoScreenDetectorModule : Module() {
       val context = appContext.reactContext ?: return@AsyncFunction false
       val powerManager = context.getSystemService(Context.POWER_SERVICE) as PowerManager
       val keyguardManager = context.getSystemService(Context.KEYGUARD_SERVICE) as KeyguardManager
-      !powerManager.isInteractive || keyguardManager.isKeyguardLocked
+      val isInteractive = powerManager.isInteractive
+      val isKeyguardLocked = keyguardManager.isKeyguardLocked
+      !isInteractive || isKeyguardLocked
     }
   }
 }
