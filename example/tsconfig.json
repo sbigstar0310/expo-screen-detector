@@ -1,0 +1,14 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "expo-screen-detector": ["../src/index"],
+      "expo-screen-detector/*": ["../src/*"],
+      // The library source in ../src has no node_modules of its own; resolve its
+      // imports (e.g. expo-modules-core) from the example app, like metro's
+      // resolver.nodeModulesPaths does.
+      "expo-modules-core": ["./node_modules/expo-modules-core"]
+    }
+  }
+}
