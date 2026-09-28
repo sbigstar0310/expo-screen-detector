@@ -2,3 +2,4 @@ node_modules/
 android/build/
 .DS_Store
 .npmrc
+android/.gradle/

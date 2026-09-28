@@ -4,7 +4,16 @@
   "description": "Expo module for detecting screen-off, screen-lock, and screen-unavailable state",
   "main": "src/index.ts",
   "types": "src/index.ts",
-  "files": ["src", "ios", "android", "expo-module.config.json"],
+  "files": [
+    "src",
+    "ios",
+    "android",
+    "expo-module.config.json",
+    "!android/.gradle",
+    "!android/build",
+    "!android/.cxx",
+    "!ios/build"
+  ],
   "keywords": ["expo", "expo-module", "screen-lock", "screen-off", "react-native"],
   "author": "sbigstar0310",
   "license": "MIT",
