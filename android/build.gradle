@@ -4,12 +4,12 @@ plugins {
 }
 
 group = 'expo.modules.screendetector'
-version = '0.1.1'
+version = '0.1.2'
 
 android {
   namespace "expo.modules.screendetector"
   defaultConfig {
-    versionCode 1
-    versionName "0.1.1"
+    versionCode 2
+    versionName "0.1.2"
   }
 }
