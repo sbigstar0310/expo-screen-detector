@@ -94,8 +94,8 @@ Returns `true` when the screen is off **or** the device is locked. This is a con
 
 ### Platform Requirements
 
-- **iOS**: 15.1+
-- **Android**: API 24+ (Expo default minSdk)
+- **iOS**: 13.4+
+- **Android**: follows the `minSdkVersion` of your Expo SDK (no module-specific minimum)
 
 ## Contributing
 
