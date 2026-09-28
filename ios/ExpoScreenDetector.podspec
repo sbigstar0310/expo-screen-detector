@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.author         = 'sbigstar0310'
   s.homepage       = 'https://github.com/sbigstar0310/expo-screen-detector'
   s.license        = 'MIT'
-  s.platforms      = { :ios => '15.1' }
+  s.platforms      = { :ios => '13.4' }
   s.swift_version  = '5.9'
   s.source         = { git: 'https://github.com/sbigstar0310/expo-screen-detector.git', tag: s.version.to_s }
   s.static_framework = true
